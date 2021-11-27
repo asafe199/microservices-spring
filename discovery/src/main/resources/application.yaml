@@ -1,7 +1,17 @@
 spring:
   application:
     name: discovery
+
+server:
+  port: 7002
+  servlet:
+    context-path: /discovery
+
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}${server.servlet.context-path}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 0

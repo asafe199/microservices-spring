@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Spring-Services" type="CompoundRunConfigurationType">
+    <toRun name="ConfigurationApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="GatewayApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="ConsoleServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
