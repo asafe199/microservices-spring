@@ -17,3 +17,9 @@ eureka:
 
 zuul:
   sensitive-headers: Cookie
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, prometheus

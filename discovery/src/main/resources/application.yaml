@@ -15,3 +15,9 @@ eureka:
       defaultZone: http://localhost:${server.port}${server.servlet.context-path}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, prometheus

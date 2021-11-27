@@ -48,12 +48,6 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>uat</id>
-			<properties>
-				<profile>uat</profile>
-			</properties>
-		</profile>
-		<profile>
 			<id>prod</id>
 			<properties>
 				<profile>prod</profile>
