@@ -12,7 +12,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:${server.port}${server.servlet.context-path}/eureka/
+      defaultZone: @host@:${server.port}${server.servlet.context-path}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 0
 
@@ -21,3 +21,6 @@ management:
     web:
       exposure:
         include: info, health, prometheus
+  endpoint:
+    prometheus:
+      enabled: true

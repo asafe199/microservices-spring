@@ -3,8 +3,8 @@ spring:
     name: console-services
   datasource:
     url: @jdbc.url@
-    username: paywithmybank
-    password: paywithmybank
+    username: root
+    password: 123456
     hikari:
       maximum-pool-size: 5
       connection-timeout: 20000
@@ -12,7 +12,7 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
+      dialect: org.hibernate.dialect.MySQL57InnoDBDialect
     show-sql: true
 
 server:
@@ -33,3 +33,6 @@ management:
     web:
       exposure:
         include: info, health, prometheus
+  endpoint:
+    prometheus:
+      enabled: true

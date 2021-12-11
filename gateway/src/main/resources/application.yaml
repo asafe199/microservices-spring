@@ -1,7 +1,8 @@
 spring:
   application:
     name: gateway
-
+  main:
+    web-application-type: reactive
 server:
   port: 7003
   servlet:
@@ -15,11 +16,11 @@ eureka:
   instance:
     prefer-ip-address: true
 
-zuul:
-  sensitive-headers: Cookie
-
 management:
   endpoints:
     web:
       exposure:
         include: info, health, prometheus
+  endpoint:
+    prometheus:
+      enabled: true

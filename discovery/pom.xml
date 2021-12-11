@@ -21,6 +21,9 @@
     <profiles>
         <profile>
             <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <profile>dev</profile>
             </properties>
@@ -36,7 +39,7 @@
     <build>
         <finalName>${project.artifactId}-${project.version}</finalName>
         <filters>
-            <filter>src/main/resources/filters/${profile}.properties</filter>
+            <filter>src/main/resources/filter/${profile}.properties</filter>
         </filters>
         <resources>
             <resource>
